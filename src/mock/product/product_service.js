@@ -1,11 +1,6 @@
-const ProductClient = require('./product_client');
-
-/**
- * 안 좋은 예시
- */
 class ProductService {
-	constructor() {
-		this.productClient = new ProductClient();
+	constructor(productClient) {
+		this.productClient = productClient;
 	}
 
 	/**
